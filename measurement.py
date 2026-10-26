@@ -1,4 +1,5 @@
-def diagnose_measurement(measurement):
+def diagnose_measurement(measurement):       
+    """Return the diagnostic status and message for one measurement."""
     
     if "value" not in measurement or "received" not in measurement:
         return '| Status: INVALID DATA | Message: Missing field'		
